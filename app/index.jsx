@@ -29,7 +29,6 @@ export default function Home() {
             <Button
               mode="contained"
               icon={"login"}
-              onPress={() => console.log("Login")}
             >
               Login
             </Button>

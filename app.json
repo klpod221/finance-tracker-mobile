@@ -2,16 +2,21 @@
   "expo": {
     "name": "Finance Tracker",
     "slug": "finance-tracker",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "orientation": "default",
     "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.klpod221.finance",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.klpod221.finance",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -36,6 +41,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "dd04176b-aa0d-41a9-8a48-0b300a1bccaf"
+      }
     }
   }
 }
